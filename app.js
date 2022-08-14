@@ -8,8 +8,8 @@ app.use(express.json());
 
 app.use('/api/v1', routeUtilisateur);
 
-connect('mongodb://127.0.0.1:27017/', (erreur) => {
-    if (erreur) {
+connect('mongodb://127.0.0.1:27017/', (err) => {
+    if (err) {
         console.log('Erreur lors de la connexion avec la base de donnée');
         process.exit(-1);
     } else {

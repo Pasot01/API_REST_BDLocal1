@@ -31,4 +31,4 @@ function fermerConnexion() {
     }
 }
 
-module.exports = { connect, bd, fermerConnexion };
+module.exports = { connect, client, bd, fermerConnexion };
